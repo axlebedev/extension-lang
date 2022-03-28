@@ -24,7 +24,7 @@
   };
 
   textInput.addEventListener('keydown', (keyboardEvent) => {
-    if (keyboardEvent.code === 'Enter') {
+    if (keyboardEvent.code === 'Enter' || keyboardEvent.code === 'NumpadEnter') {
       onEnter()
     }
   })
