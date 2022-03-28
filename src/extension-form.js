@@ -2,6 +2,10 @@
   const psevdolocalizeButton = document.getElementById('run-button');
   const textInput  = document.getElementById('factor')
 
+  document.addEventListener("DOMContentLoaded", () => {
+    textInput.focus();
+  });
+
   const onEnter = () => {
     const factor = Number(textInput.value) || 1;
 
